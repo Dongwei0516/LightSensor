@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.soft.cleargrass.lightsensor.MainActivity">
+
+    <TextView
+        android:id="@+id/lightnessTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="光线传感器"
+       />
+
+    <TextView
+        android:id="@+id/screenTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lightnessTv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="屏幕亮度"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/screenTv"
+        android:layout_alignStart="@+id/screenTv"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="170dp"
+        android:id="@+id/startBtn" />
+
+    <Button
+        android:id="@+id/endBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束"
+        android:layout_alignBaseline="@+id/startBtn"
+        android:layout_alignBottom="@+id/startBtn"
+        android:layout_toRightOf="@+id/startBtn"
+        android:layout_toEndOf="@+id/startBtn"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp" />
+
+</RelativeLayout>
